@@ -1269,10 +1269,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@knightsofglory/warlibrary@^0.3.0":
-  version "0.3.35"
-  resolved "https://registry.yarnpkg.com/@knightsofglory/warlibrary/-/warlibrary-0.3.35.tgz#ded5cc36fd330a3ba1ce709ddfa33e0efe3bcfe9"
-  integrity sha512-MrEisgQnQqRyvS2juGuU2+zCqR70t20N9c3JbBvQl9KS0IpGlKVVCYSii3h81kkW3TA3oOrgZV6z94qxFRxMjg==
+"@knightsofglory/warlibrary@0.3.36":
+  version "0.3.36"
+  resolved "https://registry.yarnpkg.com/@knightsofglory/warlibrary/-/warlibrary-0.3.36.tgz#738e040959a71f7fc2d7680bebe2e1397f35de37"
+  integrity sha512-9ELpPTHCfi1jiSluUmo+iKajQQHWWM6iyStS3TuKpyW26aMy7SUhYs095VrGditWfGhkrPyRAVnXA5aHKrFiRg==
 
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.4"

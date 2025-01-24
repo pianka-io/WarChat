@@ -1,6 +1,6 @@
 {
   "name": "warchat",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "main": "./src/main/main.ts",
   "author": "Knights of Glory",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fontsource/roboto-mono": "^4.5.8",
-    "@knightsofglory/warlibrary": "^0.3.0",
+    "@knightsofglory/warlibrary": "0.3.36",
     "@mui/icons-material": "^5.10.14",
     "@mui/lab": "^5.0.0-alpha.108",
     "@mui/material": "^5.10.14",
@@ -170,7 +170,7 @@
       "repo": "WarChat"
     }
   },
-  "devEngines": {
+  "engines": {
     "node": ">=14.x",
     "npm": ">=7.x"
   },
