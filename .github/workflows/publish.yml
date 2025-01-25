@@ -29,8 +29,8 @@ jobs:
           MACOS_CERTIFICATE: ${{ secrets.MACOS_CERTIFICATE }}
           WINDOWS_CERTIFICATE: ${{ secrets.WINDOWS_CERTIFICATE }}
         run: |
-          echo "$MACOS_CERTIFICATE" | base64 --decode > ./macos.p12
-          echo "$WINDOWS_CERTIFICATE" | base64 --decode > ./windows.pfx 
+#          echo "$MACOS_CERTIFICATE" | base64 --decode > ./macos.p12
+          echo "$WINDOWS_CERTIFICATE" | base64 --decode > ./windows.pfx
 
       - name: Build
         run: |
@@ -48,7 +48,7 @@ jobs:
           WIN_CSC_KEY_PASSWORD: ${{ secrets.WIN_CSC_KEY_PASSWORD }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm exec electron-builder -- --publish always --win --linux
+          npm exec electron-builder -- --publish always --win --mac --linux
 
       - name: Clean
         run: |
