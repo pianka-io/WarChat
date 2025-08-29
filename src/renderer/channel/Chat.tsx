@@ -115,8 +115,9 @@ export default function Chat() {
                                         if (message == null) return null
 
                                         let style: {} = {fontFamily: "Roboto"}
+                                        let pipeCount = (message.match(/\|/g) || []).length;
                                         if ((message.startsWith("Listing ") && (message.endsWith(" channels:") || message.endsWith(" channel:"))) ||
-                                            ((message.match(/\| /g) || []).length == 3)) {
+                                            (pipeCount >= 3 && pipeCount <= 4)) {
                                             style = {
                                                 fontFamily: "Roboto Mono",
                                                 fontSize: "0.8rem",
