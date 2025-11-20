@@ -54,9 +54,13 @@ const installExtensions = async () => {
 };
 
 const createWindow = async () => {
-    if (isDebug) {
-        await installExtensions();
-    }
+    // if (isDebug) {
+    //     try {
+    //         await installExtensions();
+    //     } catch (error) {
+    //         console.log('Failed to install extensions:', error);
+    //     }
+    // }
 
     const RESOURCES_PATH = app.isPackaged
         ? path.join(process.resourcesPath, 'assets')
